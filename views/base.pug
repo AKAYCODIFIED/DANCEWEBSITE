@@ -1,0 +1,30 @@
+//- Template inheritance in Pug (formerly known as Jade) is a feature that allows you to create a base or layout template and extend or override specific sections of it in child templates.
+
+//- In Pug (formerly known as Jade), block content is a special syntax used to define a block of content in a template. This block acts as a placeholder that can be overridden or filled in by child templates when they extend the parent template. The specific name "content" is just a convention; you can use any name you like for your blocks.
+
+//- this Pug template serves as a base template or layout for a website. It includes placeholders (block scripts, block style, and block content) that child templates can extend and fill in with their own content. This structure allows for consistent layout and styling across multiple pages while providing flexibility for customization in child templates.
+
+//- here basically what we did that is we set this code as a base and inherit it in its child templates
+
+doctype html 
+html
+  head
+    title Punjabi Dance Academy
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto|Pacifico'> 
+    block scripts
+    block style 
+  body
+    nav#navbar 
+        ul 
+            div#logo 
+                img(src="../static/3.png")
+                | PDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Deals]
+            li #[a(href="/contact") Contact]
+    block content
+    footer#footer 
+        | Copywright © 2024 PunjabDanceAcademy.com | All rights reserved         

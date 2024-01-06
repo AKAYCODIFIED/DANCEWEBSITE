@@ -1,0 +1,47 @@
+//- This Pug code represents template inheritance, where a child template (base.pug) extends a base template, and the child template can provide content for specific blocks defined in the base template (scripts and style in this case).
+
+extends base.pug
+
+block scripts
+    script(src="../static/index.js") 
+
+block style 
+    style 
+        include ../static/style.css
+
+block content  
+    section#introsection 
+        div.font-effect-neon Welcome to Punjabi Dance Academy
+        div.font-effect-neon.small Where Movements Speak Louder Than Words
+    section#missionsection
+        h2 Our Mission
+        div.card 
+            h3 Dance Perfection 
+            div.card-box 
+                div.card-img 
+                    img(src='../static/2.png')  
+                div.card-content 
+                    p This is best ever dance academy     
+        div.card 
+            h3 Dance the way you like 
+            div.card-box 
+                div.card-img 
+                    img(src='../static/5.webp')
+                div.card-content 
+                    p This is best ever dance academy       
+        div.card 
+            h3 Expert Teaching
+            div.card-box 
+                div.card-img 
+                    img(src='../static/6.png') 
+                div.card-content 
+                    p This is best ever dance academy       
+    section#sponsorsection
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="../static/1.png", alt="sponsors image" class="spimage")
+            img(src="../static/4.png", alt="sponsors image" class="spimage")
+            img(src="../static/7.png", alt="sponsors image" id="skype")
+            img(src="../static/8.png", alt="sponsors image" class="spimage")
+            img(src="../static/9.jpeg", alt="sponsors image" class="spimage")
+

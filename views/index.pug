@@ -1,0 +1,82 @@
+//- 1.) note here we are building are website using pug instead of html its depends on your choice 
+
+//- 2.) note its syntax its little bit difficult and diff however it makes your life easier 
+
+//- 3.) and we dont need to remember the synatx at all 
+
+//- 4.) we can take reference form net anytime 
+
+//- 5.) here we use indent or space to show components 
+
+//- 6.) In Pug (formerly known as Jade), the pipe character (|) is used to indicate a block of plain text 
+
+//- 7.) also note that it automatically handles closing or opening tag 
+
+//- 8.) also for id or class we simply use . or # 
+
+//- 9.) note to use two tags in same line we use square brackets and # like #[a ]
+
+//- 10.) and to add atritube we can simple use function syntax 
+
+doctype html 
+html 
+    head
+        title Punjabi Dance Academy
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto|Pacifico'> 
+        style 
+            include ../static/style.css 
+    body
+
+        nav#navbar 
+            ul 
+                div#logo 
+                    img(src="../static/3.png")
+                    | PDA
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Deals]
+                li #[a(href="/") Contact]
+        section#introsection 
+            div.font-effect-neon Welcome to Punjabi Dance Academy
+            div.font-effect-neon.small Where Movements Speak Louder Than Words
+        section#missionsection
+            h2 Our Mission
+            div.card 
+                h3 Dance Perfection 
+                div.card-box 
+                    div.card-img 
+                        img(src='../static/2.png')  
+                    div.card-content 
+                        p This is best ever dance academy     
+            div.card 
+                h3 Dance the way you like 
+                div.card-box 
+                    div.card-img 
+                        img(src='../static/5.webp')
+                    div.card-content 
+                        p This is best ever dance academy       
+            div.card 
+                h3 Expert Teaching
+                div.card-box 
+                    div.card-img 
+                        img(src='../static/6.png') 
+                    div.card-content 
+                        p This is best ever dance academy       
+        section#sponsorsection
+            h2 Our Sponsors
+            div#sponsors 
+                img(src="../static/1.png", alt="sponsors image" class="spimage")
+                img(src="../static/4.png", alt="sponsors image" class="spimage")
+                img(src="../static/7.png", alt="sponsors image" id="skype")
+                img(src="../static/8.png", alt="sponsors image" class="spimage")
+                img(src="../static/9.jpeg", alt="sponsors image" class="spimage")
+        footer#footer 
+            | Copywright © 2024 PunjabDanceAcademy.com | All rights reserved    
+
+  
+        script
+            include ../static/index.js
+
+

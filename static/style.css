@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto|Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0px 14px;
+    font-size: 20px;
+    margin-right: 25px;
+}
+#logo img{
+    height: 45px;
+    filter: invert(1);
+}
+
+#navbar {
+    background-color:  #ff7409;
+    padding: 10px 20px;
+    font-family: 'Lobster';
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 30px;
+}
+#navbar li a:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid cyan;
+    border-radius: 20px;
+}
+
+#introsection {
+    font-family: "Sofia", sans-serif;
+    font-size: 3rem;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding-top: 60px;
+    background-color: orange;
+    background: url('/static/akayji.jpg')no-repeat center center;
+    background-size: cover;
+    /* note nowadays we have to specify cover or contain property in background-size: ; */
+}
+#introsection div.small{
+    font-size: 1.7rem;
+    padding-top: 10px;
+}
+
+#missionsection {
+    margin: auto;
+    height: 320px;
+    width: 70%;
+  
+   
+}
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 26%;
+    margin: 14px 35px;
+    height: 200px;
+   justify-content: center;
+   background-color:#ffe8e8;
+   
+}
+.card h3{
+    text-align: center;
+    font-weight: bold;
+    margin: 5px 12px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#missionsection h2{
+    text-align: center;
+   padding-top: 10px;
+   font-family: 'Pacifico', cursive;
+   font-size: bold; 
+   font-size: 37px;
+}
+.card-box{
+    display: flex;
+    justify-content: space-between;
+    /* It is used to distribute the space between items along the main axis of the flex container. This property adds equal space between the items, pushing the first item to the start of the container and the last item to the end, while distributing the remaining space evenly between the items. */
+    align-items: center;
+}
+.card-img{
+    height: 120px;
+    padding: 0px 5px;
+    margin: 5px 8px;
+}
+.card-img img{
+    /* The height: inherit; CSS property is used to set the height of an element to be the same as its parent's height. */
+    height: inherit;
+}
+.card-content{
+    padding: 0px 5px;
+}
+.card-content p{
+    font-size: 18px;
+}
+
+
+#sponsorsection {
+    height: 300px;
+    background-color:  #f17211d0;
+
+}
+#sponsorsection h2{
+    text-align: center;
+   padding-top: 17px;
+   font-family: 'Pacifico', cursive;
+   font-size: bold; 
+   font-size: 37px;
+}
+#sponsors{
+    margin: 20px auto;
+    height: 170px;
+    max-width: 1000px;
+}
+.spimage{
+    height: 70%;
+    margin: 20px;
+    border: 2px solid #f17211d0;
+    border-radius: 35px;
+}
+#skype{
+    height: 70%;
+    margin: 20px;
+}
+
+#footer {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
